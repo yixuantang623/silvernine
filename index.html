@@ -422,7 +422,58 @@ const switchCheckbox = document.getElementById('switch');
 const plustop = document.querySelector('.plustop');
 const plusbottom = document.querySelector('.plusbottom');
 
+ document.body.style.backgroundColor = "#c1272d";
 
+var links = document.querySelectorAll('ul.links a');
+
+links.forEach(function(link) {
+    link.style.color = "#75ef00";
+});
+
+links.forEach(function(link) {
+    link.addEventListener('mouseenter', function() {
+        link.style.color = "#f2f2f2";
+    });
+
+    link.addEventListener('mouseleave', function() {
+        link.style.color = "#75ef00"; 
+    });
+});
+
+
+var plusLinks = document.querySelectorAll('ul.plus a');
+
+plusLinks.forEach(function(link) {
+    link.style.color = "#f2f2f2";
+});
+
+plusLinks.forEach(function(link) {
+    link.addEventListener('mouseenter', function() {
+        link.style.color = "#d3d3d3";
+    });
+
+    link.addEventListener('mouseleave', function() {
+        link.style.color = "#f2f2f2";
+    });
+});
+
+
+var footerLinks = document.querySelectorAll('.footer a');
+
+footerLinks.forEach(function(footerlink) {
+    footerlink.style.color = "#f2f2f2";
+});
+
+
+footerLinks.forEach(function(footerlink) {
+    footerlink.addEventListener('mouseenter', function() {
+        footerlink.style.color = "#d3d3d3"; 
+    });
+
+    footerlink.addEventListener('mouseleave', function() {
+        footerlink.style.color = "#f2f2f2";
+    });
+});
 document.addEventListener("DOMContentLoaded", function() {
 
     var upImg = document.querySelector('.BG .bgimg.up img');
