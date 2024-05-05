@@ -422,7 +422,10 @@ const switchCheckbox = document.getElementById('switch');
 const plustop = document.querySelector('.plustop');
 const plusbottom = document.querySelector('.plusbottom');
 
- document.body.style.backgroundColor = "#c1272d";
+var header = document.querySelector('.header');
+header.style.display = "none"; 
+
+document.body.style.backgroundColor = "#c1272d";
 
 var links = document.querySelectorAll('ul.links a');
 
@@ -458,7 +461,7 @@ plusLinks.forEach(function(link) {
 });
 
 
-var footerLinks = document.querySelectorAll('.footer a');
+var footerLinks = document.querySelectorAll('.footerLINK a');
 
 footerLinks.forEach(function(footerlink) {
     footerlink.style.color = "#f2f2f2";
@@ -473,7 +476,8 @@ footerLinks.forEach(function(footerlink) {
     footerlink.addEventListener('mouseleave', function() {
         footerlink.style.color = "#f2f2f2";
     });
-});
+}); 
+	
 document.addEventListener("DOMContentLoaded", function() {
 
     var upImg = document.querySelector('.BG .bgimg.up img');
